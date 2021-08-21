@@ -1,12 +1,20 @@
 /* register css */
-.signup-main {
+/* .signup-main {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background-image: url("../assets/signup-login/Bg.png");
+  background-image: url("../assests/signup-login/Bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
+body {
+  color: #fff;
+  /* background: #63738a; */
+  background-image: url("../assests/signup-login/Bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  }
 
 .bg-light {
   background-color: #ffff !important;
@@ -302,4 +310,35 @@ input[type="number"] {
   width: 431px;
   margin-top: -23px;
   height: 401px;
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 425px)  {
+
+  .signup-form{
+    width: 485px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 768px)  {
+
+  .signup-form{
+    width: 749px;
+  }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 327px)  {
+
+  .signup-form{
+    width: 364px;
+  }
+  .col-md-6 p {
+    margin-left: 0px;
+    font-size: 14px;
+}
+
+  .signup-image figure img {
+    width: 267px;
+    height: 231px;
+  }
 }
